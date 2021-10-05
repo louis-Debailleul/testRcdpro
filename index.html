@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>test</title>
+    <meta name="viewport" content="initial-scale=1">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="/asset/css/map.css" />
+    <script src="asset/js/map.js"></script>
+    <link href="asset/css/styles.css" type="text/css" rel="stylesheet">   
+  </head>
+  <body>
+    <header class="">
+      <!-- Navigation -->
+      <nav class="flex">
+        <div class="width-25">
+            <img src="asset/img/logo.png" alt="Logo" width="100">
+        </div>        
+        <ul id='main-menu' class="flex-center width-50">
+            <li><a href="#" class="actif">Accueil</a></li>
+            <li><a href="#">Nos produits</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Nous contacter</a></li>          
+        </ul>
+        <div class="width-25">
+            <ul class="flex-end">
+                <li><a href="#" class="btn">Devis en ligne</a></li>
+                <li >Mon espace client</li>
+            </ul> 
+        </div>      
+      </nav>
+      <div class="content-bando">
+            <img src='asset/img/telemarketer-working.jpg' alt="Bando" width="100%">
+            <h1>CONTACTEZ NOUS</h1>
+            <img class="logo-bando" src="asset/img/LOGO-RECTANGLE-BLANC.png" alt='logo-Blanc'>
+      </div>
+      <div class="site-path">
+            <ul class="flex">
+                <li>Accueil</li>
+                <li>></li>
+                <li>Nous Contacter</li>
+            </ul>
+      </div>
+      </header>
+      <!-- Main Content-->
+      <main> 
+          <div class="flex">
+            <div class="width-63 flex-wrap">                  
+                <img class="logo-accueil" src="asset/img/LOGO_CARRE.png" alt="logo"/>
+                <div class="card card-adress">
+                    <ul>
+                        <li class="bold">Adresse</li>
+                        <li>207 avenue du Maréchal Leclerc <br> 91300 massy</li>
+                        <li class="bold">Téléphone</li>
+                        <li class="txt-typo1">01 45 65 50 50</li>
+                        <li class="bold">Email</li>                        
+                        <li class="txt-typo1">contact@kotion.fr</li>
+                        <li class="bold">Horaires</li>
+                        <li>Du Lundi Au Vendredi 9h à 18H</li>
+                    </ul>
+                </div>
+                <!-- Google map -->
+                <div id="map"></div>
+            </div>
+            <div class="width-33">
+                <div class="card">
+                    <form class="contact-form">
+                        <div class="flex">
+                        <div class="width-50" style="padding-left:0; padding-right:29px;">
+                            <label class="label">Non</label>
+                            <input class="input" type="text" name="name" >                                                
+                        </div>
+                        <div class="width-50" style="padding: 0;">
+                            <label class="label">Prénom</label>
+                            <input class="input" type="text" name="prenom" >
+                        </div>
+                        </div>
+                        <div class="wrap">
+                            <label class="label">Email</label><br>
+                            <input class="input" type="text" name="phone" >
+                        </div>
+                        <div class="wrap ">
+                            <label class="label">Objet</label><br>
+                            <input class="input" type="text" name="objet" >
+                        </div>
+                        <div class="wrap">
+                            <label class="label">Message</label><br>
+                            <textarea class="input" name="message" ></textarea>
+                        </div>
+                        <div class="container-contact-form-btn">
+                            <a  class='btn' name='envoyer' type="submit" >
+                            Envoyer
+                             </a>
+                        </div>
+                    </form>
+                 </div>
+            </div>
+          </div>            
+        </main>
+<!-- Footer -->
+        <footer >
+            <div class="flex">
+            <div class="width-33">
+                <div class="bloc-footer-left">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li>Accueil</li>
+                        <li>Qui sommes-nous</li>
+                        <li>Nos produits</li>
+                        <li>Documments</li>
+                        <li>Mention légales</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="width-33">
+                <div class="bloc-footer-center">
+                    <h3>S'incrire à la newsletter</h3>
+                    <span>Retrouvez toutes nos offres et notre actualité en vous</span>
+                    <span>inscrivant à notre newsletter </span>
+                    <from>
+                        <input class="input" type="text" name="prenom">
+                        <a class='btn' name='envoyer' type="submit" >Envoyer</a>
+                    </from>
+                </div>
+            </div>
+            <div class="width-33">
+                <div class="bloc-footer-right">
+                    <img src="asset/img/LOGO-RECTANGLE-BLANC.png" alt="logo" width="150">
+                    <h3>Nous contacter</h3>
+                    <ul>
+                        <li>Téléphone:<span>01 45 68 50 50</span></li>
+                        <li>Adresse: <span>207 avenue du Maréchal Leclerc <br> 91300 massy</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </footer>    
+        <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly" async ></script>
+  </body>
+</html>
